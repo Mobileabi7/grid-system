@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    /* grid-template-columns:repeat(12,1fr) ; */
+    /* grid-template-rows: repeat(2,1fr) ; */
+    grid-template-rows: 100px 300px  ;
+
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m c c c c c c c c c c"
+    "f f f f f f f f f f f f"
+    ;
+    gap: 2px;
+}
+.header{
+    grid-area: h;
+}
+.content{
+    grid-area: c;
+}
+.menu{
+    grid-area: m;
+}
+.footer{
+    grid-area: f;
+}
